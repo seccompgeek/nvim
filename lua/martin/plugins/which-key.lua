@@ -169,12 +169,11 @@ local mappings = {
 	-- },
 
 	s = {
-		name = "Session",
-		s = { "<cmd>SaveSession<cr>", "Save" },
-		r = { "<cmd>RestoreSession<cr>", "Restore" },
-		x = { "<cmd>DeleteSession<cr>", "Delete" },
-		f = { "<cmd>Autosession search<cr>", "Find" },
-		d = { "<cmd>Autosession delete<cr>", "Find Delete" },
+		name = "Session Manager",
+		s = { "<cmd>SessionManager save_current_session<cr>", "Save" },
+		l = { "<cmd>SessionManager load_session<cr>", "Load Session" },
+		r = { "<cmd>SessionManager load_last_session<cr>", "Load Last Session" },
+		d = { "<cmd>SessionManager delete_session<cr>", "Delete Session" },
 		-- a = { ":SaveSession<cr>", "test" },
 		-- a = { ":RestoreSession<cr>", "test" },
 		-- a = { ":RestoreSessionFromFile<cr>", "test" },
