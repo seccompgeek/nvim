@@ -133,15 +133,24 @@ rust.setup({
 	on_attach = on_attach,
 })
 
-lspconfig["clangd"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+local other_servers = { "clangd", "pyright", "python-lsp-server", "rust_analyzer" }
 
-lspconfig["rust_analyzer"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+for _, server in pairs(other_servers) do
+	require("lspconfig")[server].setup({
+		on_attach = on_attach,
+		capabilities = capabilities,
+	})
+end
+--
+-- lspconfig["clangd"].setup({
+-- 	capabilities = capabilities,
+-- 	on_attach = on_attach,
+-- })
+--
+-- lspconfig["rust_analyzer"].setup({
+-- 	capabilities = capabilities,
+-- 	on_attach = on_attach,
+-- })
 
 vim.diagnostic.config({
 	virtual_text = false,
