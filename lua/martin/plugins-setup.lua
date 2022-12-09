@@ -124,6 +124,9 @@ return packer.startup(function(use)
 	--lsp-progress
 	use("arkav/lualine-lsp-progress")
 
+	-- session manager
+	use("Shatur/neovim-session-manager")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
