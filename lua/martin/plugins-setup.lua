@@ -109,6 +109,9 @@ return packer.startup(function(use)
 	--neogit
 	use({ "TimUntersberger/neogit", requires = "nvim-lua/plenary.nvim" })
 
+	--lazygit
+	use("kdheepak/lazygit.nvim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
