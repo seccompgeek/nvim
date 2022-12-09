@@ -112,6 +112,15 @@ return packer.startup(function(use)
 	--lazygit
 	use("kdheepak/lazygit.nvim")
 
+	--notify
+	use("rcarriga/nvim-notify")
+
+	--vimspector
+	use("puremourning/vimspector")
+
+	--todos
+	use({ "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim" })
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
