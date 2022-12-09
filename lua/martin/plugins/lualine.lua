@@ -94,10 +94,10 @@ ins_right({
 		spinner = { pre = "", post = "" },
 		message = { commenced = "In Progress", completed = "Completed" },
 	},
-	display_components = { "lsp_client_name", "spinner", { "title" } },
+	display_components = { "lsp_client_name", "spinner", { "title", "percentage", "" } },
 	timer = { progress_enddelay = 500, spinner = 1000, lsp_client_name_enddelay = 1000 },
-	--spinner_symbols = { "🌑 ", "🌒 ", "🌓 ", "🌔 ", "🌕 ", "🌖 ", "🌗 ", "🌘 " },
-	spinner_symbols = { "羽", "ﮫ", "ﲊ", "羽", "ﲊ", "ﮫ", "羽", "ﮫ" },
+	spinner_symbols = { "🌑 ", "🌒 ", "🌓 ", "🌔 ", "🌕 ", "🌖 ", "🌗 ", "🌘 " },
+	--spinner_symbols = { "羽", "ﮫ", "ﲊ", "羽", "ﲊ", "ﮫ", "羽", "ﮫ" },
 })
 
 -- configure lualine with modified theme
