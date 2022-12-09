@@ -121,6 +121,9 @@ return packer.startup(function(use)
 	--todos
 	use({ "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim" })
 
+	--lsp-progress
+	use("arkav/lualine-lsp-progress")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
