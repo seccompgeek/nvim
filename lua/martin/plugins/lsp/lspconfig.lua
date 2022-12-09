@@ -138,6 +138,11 @@ lspconfig["clangd"].setup({
 	on_attach = on_attach,
 })
 
+lspconfig["rust_analyzer"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
 vim.diagnostic.config({
 	virtual_text = false,
 	signs = true,
