@@ -127,6 +127,9 @@ return packer.startup(function(use)
 	-- session manager
 	use("Shatur/neovim-session-manager")
 
+	-- toggleterm
+	use("akinsho/toggleterm.nvim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
