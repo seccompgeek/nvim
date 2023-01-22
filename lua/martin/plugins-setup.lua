@@ -133,6 +133,9 @@ return packer.startup(function(use)
 	-- startify
 	use("mhinz/vim-startify")
 
+	-- gruvbox
+	use("morhetz/gruvbox")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
