@@ -130,6 +130,9 @@ return packer.startup(function(use)
 	-- toggleterm
 	use("akinsho/toggleterm.nvim")
 
+	-- startify
+	use("mhinz/vim-startify")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

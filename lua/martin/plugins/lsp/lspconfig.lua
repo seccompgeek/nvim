@@ -133,7 +133,7 @@ rust.setup({
 	on_attach = on_attach,
 })
 
-local other_servers = { "clangd", "pyright", "python-lsp-server", "rust_analyzer" }
+local other_servers = { "clangd", "pyright", "rust_analyzer" }
 
 for _, server in pairs(other_servers) do
 	require("lspconfig")[server].setup({
