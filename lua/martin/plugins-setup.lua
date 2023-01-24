@@ -32,7 +32,6 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
-	use("mfussenegger/nvim-dap") -- nvim dap
 
 	-- essential plugins
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
@@ -72,6 +71,9 @@ return packer.startup(function(use)
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 	use("simrat39/rust-tools.nvim") -- rust-tools
 
+	use("mfussenegger/nvim-dap")
+
+	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
 	-- formatting & linting
 	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
