@@ -40,7 +40,7 @@ local config = {
 		theme = "gruvbox",
 		disabled_filetypes = {
 			"packer",
-			"NvimTree",
+			"neo-tree",
 		},
 		component_separators = { left = "|", right = "|" },
 		section_separators = { left = "", right = "" },
