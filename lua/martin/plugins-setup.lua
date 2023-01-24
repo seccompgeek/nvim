@@ -34,18 +34,9 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 	use("mfussenegger/nvim-dap") -- nvim dap
 
-	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
-
-	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
-
-	use("szw/vim-maximizer") -- maximizes and restores current window
-
 	-- essential plugins
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
 	use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
-
-	-- commenting with gc
-	use("numToStr/Comment.nvim")
 
 	-- file explorer
 	use("nvim-tree/nvim-tree.lua")
@@ -106,26 +97,11 @@ return packer.startup(function(use)
 	--which-key
 	use("folke/which-key.nvim")
 
-	--neogit
-	use({ "TimUntersberger/neogit", requires = "nvim-lua/plenary.nvim" })
-
 	--lazygit
 	use("kdheepak/lazygit.nvim")
 
 	--notify
 	use("rcarriga/nvim-notify")
-
-	--vimspector
-	use("puremourning/vimspector")
-
-	--todos
-	use({ "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim" })
-
-	--lsp-progress
-	use("arkav/lualine-lsp-progress")
-
-	-- session manager
-	use("Shatur/neovim-session-manager")
 
 	-- toggleterm
 	use("akinsho/toggleterm.nvim")
@@ -135,6 +111,8 @@ return packer.startup(function(use)
 
 	-- gruvbox
 	use("morhetz/gruvbox")
+	-- noctis
+	use("talha-akram/noctis.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()

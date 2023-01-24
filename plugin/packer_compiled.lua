@@ -74,11 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["Comment.nvim"] = {
-    loaded = true,
-    path = "/home/martin/.local/share/nvim/site/pack/packer/start/Comment.nvim",
-    url = "https://github.com/numToStr/Comment.nvim"
-  },
   LuaSnip = {
     loaded = true,
     path = "/home/martin/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -134,11 +129,6 @@ _G.packer_plugins = {
     path = "/home/martin/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
     url = "https://github.com/glepnir/lspsaga.nvim"
   },
-  ["lualine-lsp-progress"] = {
-    loaded = true,
-    path = "/home/martin/.local/share/nvim/site/pack/packer/start/lualine-lsp-progress",
-    url = "https://github.com/arkav/lualine-lsp-progress"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/martin/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -159,15 +149,10 @@ _G.packer_plugins = {
     path = "/home/martin/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  neogit = {
+  ["noctis.nvim"] = {
     loaded = true,
-    path = "/home/martin/.local/share/nvim/site/pack/packer/start/neogit",
-    url = "https://github.com/TimUntersberger/neogit"
-  },
-  ["neovim-session-manager"] = {
-    loaded = true,
-    path = "/home/martin/.local/share/nvim/site/pack/packer/start/neovim-session-manager",
-    url = "https://github.com/Shatur/neovim-session-manager"
+    path = "/home/martin/.local/share/nvim/site/pack/packer/start/noctis.nvim",
+    url = "https://github.com/talha-akram/noctis.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -246,11 +231,6 @@ _G.packer_plugins = {
     path = "/home/martin/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["todo-comments.nvim"] = {
-    loaded = true,
-    path = "/home/martin/.local/share/nvim/site/pack/packer/start/todo-comments.nvim",
-    url = "https://github.com/folke/todo-comments.nvim"
-  },
   ["toggleterm.nvim"] = {
     loaded = true,
     path = "/home/martin/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
@@ -271,16 +251,6 @@ _G.packer_plugins = {
     path = "/home/martin/.local/share/nvim/site/pack/packer/start/vim-ReplaceWithRegister",
     url = "https://github.com/inkarkat/vim-ReplaceWithRegister"
   },
-  ["vim-maximizer"] = {
-    loaded = true,
-    path = "/home/martin/.local/share/nvim/site/pack/packer/start/vim-maximizer",
-    url = "https://github.com/szw/vim-maximizer"
-  },
-  ["vim-nightfly-guicolors"] = {
-    loaded = true,
-    path = "/home/martin/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors",
-    url = "https://github.com/bluz71/vim-nightfly-guicolors"
-  },
   ["vim-startify"] = {
     loaded = true,
     path = "/home/martin/.local/share/nvim/site/pack/packer/start/vim-startify",
@@ -290,16 +260,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/martin/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
-  },
-  ["vim-tmux-navigator"] = {
-    loaded = true,
-    path = "/home/martin/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
-    url = "https://github.com/christoomey/vim-tmux-navigator"
-  },
-  vimspector = {
-    loaded = true,
-    path = "/home/martin/.local/share/nvim/site/pack/packer/start/vimspector",
-    url = "https://github.com/puremourning/vimspector"
   },
   ["which-key.nvim"] = {
     loaded = true,

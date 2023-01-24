@@ -37,13 +37,13 @@ lualine_nightfly.command = {
 
 local config = {
 	options = {
-		theme = "tokyonight",
+		theme = "gruvbox",
 		disabled_filetypes = {
 			"packer",
 			"NvimTree",
 		},
-		component_separators = { left = "", right = "" },
-		section_separators = { left = "", right = "" },
+		component_separators = { left = "|", right = "|" },
+		section_separators = { left = "", right = "" },
 	},
 	sections = {
 		lualine_a = { "mode" },
@@ -65,40 +65,6 @@ local config = {
 	extensions = {},
 	--    theme = lualine_nightfly,
 }
-
--- Inserts a component in lualine_x ot right section
-local function ins_right(component)
-	table.insert(config.sections.lualine_x, component)
-end
-
-ins_right({
-	"lsp_progress",
-	display_components = { "lsp_client_name", { "title", "percentage", "message" } },
-	-- With spinner
-	-- display_components = { 'lsp_client_name', 'spinner', { 'title', 'percentage', 'message' }},
-	colors = {
-		percentage = colors.cyan,
-		title = colors.cyan,
-		message = colors.cyan,
-		spinner = colors.cyan,
-		lsp_client_name = colors.magenta,
-		use = true,
-	},
-	separators = {
-		component = " ",
-		progress = " | ",
-		message = { pre = "(", post = ")" },
-		percentage = { pre = "", post = "%% " },
-		title = { pre = "", post = ": " },
-		lsp_client_name = { pre = "[", post = "]" },
-		spinner = { pre = "", post = "" },
-		message = { commenced = "In Progress", completed = "Completed" },
-	},
-	display_components = { "lsp_client_name", "spinner", { "title", "percentage", "" } },
-	timer = { progress_enddelay = 500, spinner = 1000, lsp_client_name_enddelay = 1000 },
-	spinner_symbols = { "🌑 ", "🌒 ", "🌓 ", "🌔 ", "🌕 ", "🌖 ", "🌗 ", "🌘 " },
-	--spinner_symbols = { "羽", "ﮫ", "ﲊ", "羽", "ﲊ", "ﮫ", "羽", "ﮫ" },
-})
 
 -- configure lualine with modified theme
 lualine.setup(config)
